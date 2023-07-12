@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.jpg">
+    <title> JavaScript Form Validation Project</title>
+</head>
+<body>
+    <section class="main-container">
+        <div class="form">
+            <img src="user_image.png" alt="user_image">
+            <h1>Login</h1>
+            <br>
+            <div class="login">
+                <form onsubmit="validate()"> <!-- 'onsubmit()' method is call when the submit button is pressed and if the button type is 'submit' -->
+                    <div class="form-group">
+                        <i class="fa-solid fa-user"></i><input type="text" id="name" minlength="5" maxlength="20" placeholder="Full Name"> <!-- <i> tag is used for images --> <!-- here, this field will not accept characters less than 5 and more than 20 due to 'minlength' and 'maxlength' attributes -->
+                    </div>
+
+                    <br> <!-- used for giving space between the elements -->
+
+                    <div class="form-group">
+                        <i class="fa-solid fa-at"></i><input type="email" id="email-id" placeholder="Email"> <!-- by selecting the input type 'email', this field will not accept any character string without a '@' symbol and a domain name following it -->
+                    </div>
+
+                    <br>
+                    
+                    <div class="form-group">
+                        <i class="fa-solid fa-phone"></i><input type="number" id="phone" placeholder="Mobile No."> <!-- by selecting the input type 'number', this field will only accept numbers -->
+                    </div>
+
+                    <br>
+                    
+                    <div class="form-group">
+                        <i class="fa-solid fa-lock"></i><input type="password" id="password" minlength="8" placeholder="Password"> <!-- by selecting input type 'password', this will show a 'bullet' or 'circle' whenever a character is entered in this field, prioritizing privacy and this field will not accept characters less than 8 due to 'minlength' attribute -->
+                    </div>
+
+                    <br>
+                    
+                    <div class="form-group">
+                        <i class="fa-solid fa-key"></i><input type="password" id="confirm-password" minlength="8" placeholder="Confirm Password">
+                    </div>
+
+                    <br>
+
+                    <button type="submit"><b>Submit</b></button> <!-- a button to submit the form -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/2fa914bebf.js" crossorigin="anonymous"></script> <!-- a JavaScript file is link with this HTML file for images -->
+    <script src="script.js"></script> <!-- a JavaScript file is link with this HTML file -->
+</body>
+</html>

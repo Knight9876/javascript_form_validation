@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, red, orange, yellow, orange, red);
+}
+
+.form > h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+img {
+    width: 8rem;
+    background-color: transparent;
+}
+
+.form {
+    margin: 0rem 20rem;
+    margin-top: 6rem;
+    text-align: center;
+    padding: 2rem;
+    border: solid 0.2rem;
+    border-radius: 1rem;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+input {
+    background-color: transparent;
+    border-color: black;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+button {
+    border-radius: 1rem;
+    background-color: orange;
+    padding: 1rem 9.4rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-width: 0.2rem;
+}
+
+.fa-solid {
+    background-color: transparent;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1919px) and (min-width: 1201px) {
+    .form {
+        margin: 0rem 10rem;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
+    .form {
+        margin: 0rem 10rem;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 531px) {
+    .form {
+        margin: 0rem 2rem;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 530px) and (min-width: 321px) {
+    .form {
+        padding: 1rem 0rem;
+        font-size: 0.5rem;
+        margin: 3rem 1rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .form {
+        top: 40%;
+    }
+
+    body {
+        background-color: lime;
+    }
+
+    button {
+        padding: 1rem 6.4rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .form {
+        margin: 2rem 0rem;
+        padding: 0;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .fa-solid {
+        font-size: 1.3rem;
+    }
+
+    button {
+        padding: 1rem 5rem;
+    }
+
+    .form > h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    input {
+        font-size: 0.8rem;
+    }
+}
+
+::placeholder {
+    color: rgb(74, 74, 74);
+}
+
+input:hover {
+    background-color: rgba(0, 0, 0, 0.172);
+}
+
+input:focus {
+    background-color: white;
+}
+
+button:focus {
+    background-color: rgb(210, 136, 0);
+}
